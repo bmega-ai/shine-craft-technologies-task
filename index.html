@@ -115,9 +115,6 @@ section { padding: 64px 6%; }
 .sc-price { font-size: .68rem; color: #00C8E8; background: rgba(0,200,232,.1); padding: .1rem .45rem; border-radius: 99px; font-weight: 600; margin-left: auto; }
 .sc-btn { width: 100%; padding: .62rem; border-radius: 7px; border: 1.5px solid rgba(0,200,232,.4); background: transparent; color: #00C8E8; font-family: 'Poppins', sans-serif; font-size: .82rem; font-weight: 600; cursor: pointer; transition: .2s; }
 .sc-btn:hover { background: #1356D3; border-color: #1356D3; color: #fff; }
-.emr-bar { margin-top: 2rem; padding: 1.6rem 2rem; background: rgba(220,38,38,.1); border: 1.5px solid rgba(220,38,38,.3); border-radius: 12px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1.2rem; }
-.emr-bar h3 { font-size: 1.15rem; font-weight: 700; color: #ffffff; margin-bottom: .2rem; }
-.emr-bar p { font-size: .84rem; color: #8BACC8; }
 
 /* AMC PLANS */
 #amc { background: #071628; }
@@ -208,14 +205,7 @@ section { padding: 64px 6%; }
 .w-pts { list-style: none; display: flex; flex-direction: column; gap: .3rem; }
 .w-pts li { font-size: .78rem; color: #8BACC8; display: flex; align-items: center; gap: .5rem; }
 .w-pts li::before { content: '✓'; color: #00C8E8; font-weight: 700; }
-.reviews { display: grid; grid-template-columns: repeat(auto-fit, minmax(270px,1fr)); gap: 1.3rem; margin-top: 2.5rem; }
-.rv { padding: 1.5rem; border-radius: 12px; border: 1px solid rgba(91,171,255,.12); background: #071628; }
-.rv-stars { color: #f59e0b; font-size: .9rem; margin-bottom: .7rem; letter-spacing: 2px; }
-.rv-txt { font-size: .85rem; color: #8BACC8; line-height: 1.72; font-style: italic; margin-bottom: .9rem; }
-.rv-person { display: flex; align-items: center; gap: .7rem; }
-.rv-av { width: 36px; height: 36px; border-radius: 50%; background: #0D1F38; border: 2px solid rgba(91,171,255,.25); display: flex; align-items: center; justify-content: center; font-size: .95rem; }
-.rv-name { font-weight: 700; font-size: .84rem; color: #e2eaf5; }
-.rv-plan { font-size: .7rem; color: #00C8E8; font-weight: 600; }
+
 
 /* CONTACT / CTA */
 #cta { background: #071628; border-top: 1px solid rgba(91,171,255,.1); }
@@ -387,10 +377,7 @@ footer { background: #020A14; color: #4E6E8A; padding: 2.5rem 6%; }
       <div class="sc"><div class="sc-top"><div class="sc-icon ic-p">🛁</div><div><div class="sc-name">Shower &amp; Bathroom</div><div class="sc-type">Plumbing</div></div></div><div class="sc-body"><ul class="sc-list"><li><span class="dot2"></span>Shower head replacement<span class="sc-price">₹349+</span></li><li><span class="dot2"></span>Toilet flush repair<span class="sc-price">₹299+</span></li><li><span class="dot2"></span>Drainage unblocking<span class="sc-price">₹399+</span></li><li><span class="dot2"></span>Fixture installation<span class="sc-price">₹499+</span></li></ul><button class="sc-btn" onclick="document.getElementById('cta').scrollIntoView({behavior:'smooth'})">Request Service →</button></div></div>
       <div class="sc"><div class="sc-top"><div class="sc-icon ic-r">💧</div><div><div class="sc-name">Water Emergency</div><div class="sc-type" style="color:#dc2626;">Priority</div></div></div><div class="sc-body"><ul class="sc-list"><li><span class="dot2" style="background:#fca5a5;"></span>Water main shut-off</li><li><span class="dot2" style="background:#fca5a5;"></span>Burst pipe rapid fix</li><li><span class="dot2" style="background:#fca5a5;"></span>Flood prevention</li><li><span class="dot2" style="background:#fca5a5;"></span>Sewage overflow</li></ul><button class="btn btn-red btn-sm" style="width:100%" onclick="document.getElementById('emergency').scrollIntoView({behavior:'smooth'})">🚨 Emergency Call</button></div></div>
     </div>
-    <div class="emr-bar">
-      <div><h3>🔥 Electrical Fire or Water Emergency?</h3><p>Emergency crew on standby — reaching you within 30 minutes, 24/7.</p></div>
-      <a href="#emergency" class="btn btn-red">🚨 Request Emergency</a>
-    </div>
+    
   </div>
 </section>
 
@@ -477,7 +464,7 @@ footer { background: #020A14; color: #4E6E8A; padding: 2.5rem 6%; }
     </div>
     <div class="promise-row">
       <div class="pg"><span class="pg-ico">⏱️</span><div><div class="pg-t">30-Min Response</div><div class="pg-d">Average dispatch</div></div></div>
-      <div class="pg"><span class="pg-ico">💬</span><div><div class="pg-t">Live Updates</div><div class="pg-d">SMS & WhatsApp</div></div></div>
+      
       <div class="pg"><span class="pg-ico">🔩</span><div><div class="pg-t">Genuine Parts</div><div class="pg-d">ISI & OEM certified</div></div></div>
       <div class="pg"><span class="pg-ico">🛡️</span><div><div class="pg-t">90-Day Warranty</div><div class="pg-d">All workmanship</div></div></div>
       <div class="pg"><span class="pg-ico">💰</span><div><div class="pg-t">Fixed Price</div><div class="pg-d">No surprise charges</div></div></div>
@@ -541,11 +528,7 @@ footer { background: #020A14; color: #4E6E8A; padding: 2.5rem 6%; }
       <div class="wc"><div class="w-ico">🔩</div><div class="w-t">Genuine Parts</div><p class="w-d">Only OEM, ISI-certified components — no cheap substitutes.</p><ul class="w-pts"><li>ISI-mark certified parts only</li><li>Havells, Jaquar, Polycab</li><li>Parts receipts provided</li></ul></div>
       <div class="wc"><div class="w-ico">💰</div><div class="w-t">Affordable AMC</div><p class="w-d">Save up to 60% annually with our AMC plans vs paying per-visit.</p><ul class="w-pts"><li>Basic from ₹2,999/year</li><li>Premium from ₹5,999/year</li><li>No hidden charges, ever</li></ul></div>
     </div>
-    <div class="reviews">
-      <div class="rv"><p class="rv-txt">"Ampaxis responded in 20 minutes to an electrical emergency at 2AM. Professional, fast and fixed everything safely."</p><div class="rv-person"><div class="rv-av">👨</div><div><div class="rv-name">Vikram Patel</div><div class="rv-plan">Premium AMC · Mumbai</div></div></div></div>
-      <div class="rv"><p class="rv-txt">"3 years on the Premium plan and every visit is on time. They caught a dangerous wiring fault before it became a fire."</p><div class="rv-person"><div class="rv-av">👩</div><div><div class="rv-name">Meera Nair</div><div class="rv-plan">Premium AMC · Pune</div></div></div></div>
-      <div class="rv"><p class="rv-txt">"Our Corporate AMC gives us zero downtime. A dedicated manager, instant emergency response — exactly what we need."</p><div class="rv-person"><div class="rv-av">🏢</div><div><div class="rv-name">TechPark Solutions</div><div class="rv-plan">Corporate AMC · BKC</div></div></div></div>
-    </div>
+  
   </div>
 </section>
 
@@ -559,15 +542,15 @@ footer { background: #020A14; color: #4E6E8A; padding: 2.5rem 6%; }
         <p class="cta-sub">Join 5,000+ satisfied homes and businesses. Fill the form and our team will call you back within 30 minutes.</p>
         <div class="info-cards">
           <div class="ic"><div class="ic-ico">📞</div><div><div class="ic-t">Phone Support</div><div class="ic-s">+91 98765 43210 · 24/7</div></div></div>
-          <div class="ic"><div class="ic-ico">💬</div><div><div class="ic-t">WhatsApp Us</div><div class="ic-s">Quick replies available</div></div></div>
+          
           <div class="ic"><div class="ic-ico">🚨</div><div><div class="ic-t">Emergency Line</div><div class="ic-s">30-min response · Always on standby</div></div></div>
           <div class="ic"><div class="ic-ico">📍</div><div><div class="ic-t">Service Areas</div><div class="ic-s">Mumbai · Pune · Thane · Navi Mumbai</div></div></div>
         </div>
         <div class="trust-list">
           <div class="tl"><span>🛡️</span><span>Fully licensed &amp; insured technicians</span></div>
-          <div class="tl"><span>✅</span><span>90-day workmanship guarantee</span></div>
+          
           <div class="tl"><span>💰</span><span>Transparent pricing — no hidden charges</span></div>
-          <div class="tl"><span>⭐</span><span>4.9/5 rating across 5,000+ customers</span></div>
+          
         </div>
       </div>
       <div class="cform" id="ctaForm">
